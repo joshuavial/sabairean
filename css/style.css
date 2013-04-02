@@ -1,0 +1,24 @@
+/* 
+    Document   : style
+    Created on : Apr 2, 2013, 9:05:09 AM
+    Author     : Reaksmey
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.command{
+    font-style: italic;
+    color: #0040FF;
+    margin-left: 15px;  
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.image{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
