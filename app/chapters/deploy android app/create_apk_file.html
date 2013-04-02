@@ -1,0 +1,55 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create the APK File</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link REL="StyleSheet" TYPE="text/css" HREF="../css/style.css"> 
+    </head>
+    <body>
+        <h1> Create the APK File </h1>
+        <p> 
+            If you want to give someone your application to try out, you can just give them the copy of the .apk file in the bin directory
+            of the project file hierarchy. To do this, you need to sign the application by using a self-signed certificate.
+        </p>
+        
+        <p>
+           Notice that, it is not the same as deploying, but it is the procedure of exporting. 
+        </p>
+        
+        <p>
+           In this example, we use the TestActivity project, but you can use any application. The step for exporting is shown as followed: 
+        </p>
+        <ul>
+            <li> Right click on your project and select export </li>
+            <li> Choose Android </li>
+            <li> Choose Export Android Application </li>
+            <div class="image">
+                <img src="images/export_android_application.png" />
+            </div>
+            <li> If your application don't have any error, the window below will appear </li>
+            <div class="image">
+                <img src="images/project_check.png" /> 
+            </div>
+            <li> Next you will select the keystore, the keystore is the file holding your key </li>
+            <li> Choose the location where you want to store your key and fill the password </li>
+            <div class="image">
+                <img src="images/key_store.png" />
+            </div>
+            <li> Now it is step to create the self-signed certificate </li>
+            <div class="image">
+                <img src="images/self_signed_certificate.png" />
+            </div>
+            <li> Filled the required informations </li>
+            <li> Click Finish </li>
+        </ul>
+        
+        <p> 
+            Now you have the .apk file, you can copy this file to the android device and click to install. There are several tools that you can browse 
+            to find where your .apk file locate such as file manager.
+        </p>
+    </body>
+</html>
