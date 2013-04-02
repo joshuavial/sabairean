@@ -6,6 +6,10 @@
         Purpose of the stylesheet follows.
 */
 
+h1, h2, h3 {
+    color: #0404B4;
+}
+
 root { 
     display: block;
 }
