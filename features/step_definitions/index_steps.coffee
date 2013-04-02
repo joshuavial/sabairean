@@ -11,4 +11,7 @@ stepDefinitions = () ->
     assert.equal text, this.browser.text(selector)
     callback()
 
+  this.Then /^I should see "([^"]*)"$/, (string, callback) ->
+    callback.pending()
+
 module.exports = stepDefinitions

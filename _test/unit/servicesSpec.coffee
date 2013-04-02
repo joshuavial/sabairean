@@ -1,5 +1,5 @@
 describe 'service', ->
-  beforeEach module('myApp.services')
+  beforeEach module('hlApp.services')
 
   describe 'version', ->
     it 'should return current version', inject (version) ->

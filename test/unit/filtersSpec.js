@@ -1,6 +1,6 @@
 (function() {
   describe('filter', function() {
-    beforeEach(module('myApp.filters'));
+    beforeEach(module('hlApp.filters'));
     return describe('interpolate', function() {
       beforeEach(module(function($provide) {
         $provide.value('version', 'TEST_VER');

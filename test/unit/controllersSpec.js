@@ -1,10 +1,10 @@
 (function() {
-  describe('MyCtrl1', function() {
-    var myCtrl1;
+  describe('ChapterCtrl', function() {
+    var chapterCtrl;
 
-    myCtrl1 = null;
+    chapterCtrl = null;
     beforeEach(function() {
-      return myCtrl1 = new MyCtrl1();
+      return chapterCtrl = new ChapterCtrl();
     });
     return it('should ....', function() {});
   });

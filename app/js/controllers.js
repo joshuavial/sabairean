@@ -1,10 +1,8 @@
 (function() {
-  'use strict';  this.MyCtrl1 = function() {};
-
-  this.MyCtrl1.$inject = [];
-
-  this.MyCtrl2 = function() {};
-
-  this.MyCtrl2.$inject = [];
+  'use strict';  this.ChapterCtrl = function($scope, $http) {
+    return $http.getJSON('chapters/chapters.json').success(function(data) {
+      return $scope.chapters = data;
+    });
+  };
 
 }).call(this);

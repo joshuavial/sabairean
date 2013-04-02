@@ -1,11 +1,5 @@
 'use strict'
 
-#Controllers
-
-@MyCtrl1 = ->
-
-@MyCtrl1.$inject = []
-
-@MyCtrl2 = ->
-
-@MyCtrl2.$inject = []
+@ChapterCtrl = ($scope, $http) ->
+  $http.getJSON('chapters/chapters.json').success (data) ->
+    $scope.chapters = data

@@ -1,6 +1,6 @@
 
 describe 'directives', ->
-  beforeEach(module('myApp.directives'))
+  beforeEach(module('hlApp.directives'))
 
   describe 'app-version', ->
     it 'should print current version', ->
