@@ -8,7 +8,7 @@
  *
  */
 
-angular.module('localization', []).
+this.angular.module('localization', []).
     factory('localize', ['$http', '$rootScope', '$window', '$filter', function ($http, $rootScope, $window, $filter) {
         var localize = {
             // use the $window service to get the language of the user's browser

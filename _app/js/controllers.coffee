@@ -1,5 +1,10 @@
 'use strict'
 
+@AppController = ($scope, localize) ->
+  $scope.setLanguage = (language) ->
+    localize.setLanguage(language)
+
+
 @ChapterCtrl = ($scope, $http) ->
-  $http.getJSON('chapters/chapters.json').success (data) ->
+  $http.get('chapters/chapters.json').success (data) ->
     $scope.chapters = data
