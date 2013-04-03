@@ -35,7 +35,6 @@ this.angular.module('localization', []).
             initLocalizedResources:function () {
                 // build the url to retrieve the localized resource file
                 var url = '/i18n/resources-locale_' + localize.language + '.js';
-                url = '/i18n/resources-locale_default.js';
                 // request the resource file
                 $http({ method:"GET", url:url, cache:false }).success(localize.successCallback).error(function () {
                     // the request failed set the url to the default resource file
