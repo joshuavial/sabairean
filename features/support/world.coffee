@@ -8,6 +8,11 @@ World = (callback) ->
   this.visit = (uri, callback) ->
     this.browser.visit(uri, callback)
 
+  this.clickLink = (link_text, callback) ->
+    this.browser.clickLink(link_text).then ->
+      callback()
+
+
   callback(this)
 
 exports.World = World

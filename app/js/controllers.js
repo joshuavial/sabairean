@@ -5,7 +5,7 @@
     };
   };
 
-  this.ChapterCtrl = function($scope, $http) {
+  this.ChapterController = function($scope, $http) {
     return $http.get('chapters/chapters.json').success(function(data) {
       return $scope.chapters = data;
     });

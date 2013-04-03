@@ -35,6 +35,7 @@ this.angular.module('localization', []).
             initLocalizedResources:function () {
                 // build the url to retrieve the localized resource file
                 var url = '/i18n/resources-locale_' + localize.language + '.js';
+                url = '/i18n/resources-locale_default.js';
                 // request the resource file
                 $http({ method:"GET", url:url, cache:false }).success(localize.successCallback).error(function () {
                     // the request failed set the url to the default resource file
@@ -58,7 +59,12 @@ this.angular.module('localization', []).
                     )[0];
 
                     // set the result
-                    result = entry.value;
+                    if (typeof(entry) != 'undefined') {
+                      result = entry.value;
+                    } else {
+                      result = "ERROR: no translation for (" + value + ")";
+                    }
+
                 }
                 // return the value to the call
                 return result;

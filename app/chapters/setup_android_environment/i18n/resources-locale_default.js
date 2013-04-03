@@ -1,12 +1,12 @@
 [
   {
     "key" : "__title__",
-    "value" : "សប្បាយរៀន",
+    "value" : "Happy Learning",
     "description" : "Title of app"
   },
   {
     "key" : "__chapters__",
-    "value" : "Chapters--",
+    "value" : "Chapters",
     "description" : "Heading for chapters"
   }
 ]

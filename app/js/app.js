@@ -3,7 +3,7 @@
     '$routeProvider', function($routeProvider) {
       $routeProvider.when('/chapters', {
         templateUrl: 'partials/chapters.html',
-        controller: ChapterCtrl
+        controller: ChapterController
       }).otherwise({
         redirectTo: '/chapters'
       });

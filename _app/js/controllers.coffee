@@ -5,6 +5,8 @@
     localize.setLanguage(language)
 
 
-@ChapterCtrl = ($scope, $http) ->
+@ChapterController = ($scope, $http) ->
   $http.get('chapters/chapters.json').success (data) ->
     $scope.chapters = data
+
+
