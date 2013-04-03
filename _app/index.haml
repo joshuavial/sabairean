@@ -9,13 +9,11 @@
   %body{ng-controller: 'AppController'}
     %h1.title{data-i18n:"__title__"}
 
-    %a{href:"#", ng-click:"''"} test
-
-    %a{href:"#", ng-click:"setLanguage('en')"} English
-
-    |
-
-    %a{href:"#", ng-click:"setLanguage('kh-kh')"} Khmer
+    %ul
+      %li
+        %a{href:"#", ng-click:"setLanguage('en')"} English
+      %li
+        %a{href:"#", ng-click:"setLanguage('kh-kh')"} Khmer
 
     %div{ng-view: ''}
 
