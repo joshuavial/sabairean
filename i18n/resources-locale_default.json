@@ -42,6 +42,10 @@
     "value": "Setup your android environment"
   },
   {
+    "key": "taking_and_resizing_photo",
+    "value": "Take a photo with your mobile and resize it for use in game"
+  },
+  {
     "key": "converting_khmer_unicode",
     "value": "Converting Khmer unicode"
   },
