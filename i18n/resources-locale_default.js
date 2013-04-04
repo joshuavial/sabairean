@@ -24,5 +24,9 @@
   {
     "key"   : "deploy_android_app",
     "value" : "Deploy your android app"
+  },
+  {
+    "key"   : "making_an_android_project",
+    "value" : "Making an android project"
   }
 ]

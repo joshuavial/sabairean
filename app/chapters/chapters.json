@@ -6,5 +6,9 @@
   {
      "name" : "Deploy your android app",
      "key" : "deploy_android_app"
+  },
+  {
+     "name" : "Making an android project",
+     "key" : "making_an_android_project"
   }
 ]

@@ -1,7 +1,12 @@
 [
   {
-    "key" : "__title__",
-    "value" : "Happy Learning",
-    "description" : "Title of app"
+    "key" : "%step1_title",
+    "value" : "Installing the Android SDK and Prerequisites",
+    "description" : "Title of step"
+  },
+  {
+    "key" : "%step1_...",
+    "value" : "---",
+    "description" : ""
   }
 ]
