@@ -9,6 +9,7 @@ module.exports = (grunt) ->
       app:
         files: 
           "app/index.html" : "_app/index.haml"
+          "app/partials/topics.html" : "_app/partials/topics.haml"
           "app/partials/chapters.html" : "_app/partials/chapters.haml"
           "app/partials/chapter.html" : "_app/partials/chapter.haml"
 

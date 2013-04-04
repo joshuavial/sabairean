@@ -40,11 +40,11 @@ this.angular.module('localization', []).
               if (path == null || typeof(path) == 'undefined') {
                 path = 'i18n';
               }
-              var url = path + '/resources-locale_' + localize.language + '.js';
+              var url = path + '/resources-locale_' + localize.language + '.json';
               $http({ method:"GET", url:url, cache:false }).success(function(data) {
                 localize.successCallback(localize.dictionary.concat(data));
               }).error(function () {
-                var url = path + '/resources-locale_default.js';
+                var url = path + '/resources-locale_default.json';
                 $http({ method:"GET", url:url, cache:false }).success(function(data) {
                   localize.successCallback(localize.dictionary.concat(data));
                 });

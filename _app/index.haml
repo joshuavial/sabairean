@@ -7,15 +7,23 @@
     %link{rel: 'stylesheet', href: 'css/app.css' }
 
   %body{ng-controller: 'AppController'}
-    %h1.title{data-i18n:"__title__"}
-
-    %ul
+    %ul.choose_language
       %li
         %a{ng-click:"setLanguage('en')"} English
       %li
         %a{ng-click:"setLanguage('kh-kh')"} Khmer
 
-    %a{href:"#"} {{"__chapters__" | i18n}}
+    %h1.title{data-i18n:"__title__"}
+
+    %ul.breadcrumbs
+      %li
+        %a{href:"#"} {{"__topics__" | i18n}}
+      %li{ng-show: 'topic_exists()'}
+        %a{href:"#/topics/{{topic.key}}"} {{topic.key | i18n}}
+      %li{ng-show: 'chapter_exists()'}
+        %a{href:"#/topics/{{topic.key}}/chapters/{{chapter.key}}"} {{chapter.key | i18n}}
+
+
 
     %div{ng-view: ''}
 

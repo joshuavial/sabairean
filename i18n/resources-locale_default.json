@@ -5,6 +5,11 @@
     "description": "Title of app"
   },
   {
+    "key": "__topics__",
+    "value": "Topics",
+    "description": "Heading for topics"
+  },
+  {
     "key": "__chapters__",
     "value": "Chapters",
     "description": "Heading for chapters"
@@ -18,8 +23,9 @@
     "value": "Previous"
   },
   {
-    "key": "setup_android_environment",
-    "value": "Setup your android environment"
+    "key": "android_setup",
+    "value": "Android :: Setup",
+    "description": "Topic for setting up android"
   },
   {
     "key": "setup_android_environment",

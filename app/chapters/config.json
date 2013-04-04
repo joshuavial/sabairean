@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "key": "android_setup",
+      "name": "Android Setup",
+      "chapters": [
+        {
+          "name": "Setup your android environment",
+          "key": "setup_android_environment"
+        },
+        {
+          "name": "Deploy your android app",
+          "key": "deploy_android_app"
+        },
+        {
+          "name": "Making an android project",
+          "key": "making_an_android_project"
+        }
+      ]
+    }
+  ]
+}
