@@ -1,98 +1,84 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Setup android environment</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link REL="StyleSheet" TYPE="text/css" HREF="../css/style.css"> 
-    </head>
-    <body>
-        <h1>
-            Installing the Android SDK and Prerequisites
-        </h1>
-        <p>
-            Successfully installing the Android SDK requires two other software systems that are
-            not part of the Android SDK: the Java Development Kit (JDK) and the Eclipse integrated
-            development environment (IDE).
-        </p>
-        
-        <h2>
-            The Java Development Kit(JDK)
-        </h2>
-        <p>
-            If your system has an up-to-date JDK installed, you won’t need to install it again. The
-            JDK provides tools, such as the Java compiler, used by IDEs and SDKs for developing
-            Java programs. The JDK also contains a Java Runtime Environment (JRE), which enables
-            Java programs, such as Eclipse, to run on your system.
-        </p>
-        
-        <h3>
-            Install JDK for Window
-        </h3>
-        <p>
-            You need to download the JDK from this site <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
-            <br/>
-            Once you have the executable file, run it to install the JDK.
-        </p>
-        
-        <h3>
-            Install JDK for Linux
-        </h3>
-        <p>
-            For Linux user, you need to perform the following step:
-            <br/>
-            Download the archive or package corresponding to your system.
-            <br/>
-            Extract the archive by typing:
-            <br/>
-            <span class="command"> (tar -xvf archive-name.tar.gz) </span>
-            <br/>
-            The JDK archive will be extracted into the ./jdk-name directory. Now move the JDK directoy to /usr/lib 
-            <br/>
-            <span class="command"> (sudo mv ./jdk-name /usr/lib/jvm/jdk-name) </span>
-            <br/>
-            Moving the JDK to that location makes it a configurable alternative in your Linux
-            environment, which is useful if you have projects or programs that require other versions
-            of the JRE or JDK. Now run:
-            <br/>
-            <span class="command">
-                sudo update-alternatives --install "/usr/bin/java" "java" \ "/usr/lib/jvm/jdk-name/bin/java" 1
-            </span>
-            <br/>
-            <span class="command">
-                sudo update-alternatives --install "/usr/bin/javac" "javac" \ "/usr/lib/jvm/jdk-name.0/bin/javac" 1
-            </span>
-            <br/>
-            <span class="command">
-                sudo update-alternatives --install "/usr/bin/javaws" "javaws" \ "/usr/lib/jvm/jdk-name/bin/javaws" 1
-            </span>
-            <br/>
-            <span class="command">
-                sudo update-alternatives --config java
-            </span>
-            <br/>
-            You will see output similar to that shown here:
-            <div class="image">
-            <img src="images/java_choice.png"/>
-            </div>
-            When you select the JDK you are installing, you will see the output like this:
-            <div class="image">
-            <img src="images/after_select_jdk.png"/>
-            </div>
-            Repeat the preceding selection process for javac:
-            <br/>
-            <span class="command">
-               sudo update-alternatives --config javac
-            </span>
-            <br/>
-            And for javaws:
-            <br/>
-            <span class="command">
-               sudo update-alternatives --config javaws 
-            </span>
-        </p>
-    </body>
-</html>
+<h1>
+  {{"%step1_title" | i18n}} 
+</h1>
+<p>
+    Successfully installing the Android SDK requires two other software systems that are
+    not part of the Android SDK: the Java Development Kit (JDK) and the Eclipse integrated
+    development environment (IDE).
+</p>
+
+<h2>
+    The Java Development Kit(JDK)
+</h2>
+<p>
+    If your system has an up-to-date JDK installed, you won’t need to install it again. The
+    JDK provides tools, such as the Java compiler, used by IDEs and SDKs for developing
+    Java programs. The JDK also contains a Java Runtime Environment (JRE), which enables
+    Java programs, such as Eclipse, to run on your system.
+</p>
+
+<h3>
+    Install JDK for Window
+</h3>
+<p>
+    You need to download the JDK from this site <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
+    <br/>
+    Once you have the executable file, run it to install the JDK.
+</p>
+
+<h3>
+    Install JDK for Linux
+</h3>
+<p>
+    For Linux user, you need to perform the following step:
+    <br/>
+    Download the archive or package corresponding to your system.
+    <br/>
+    Extract the archive by typing:
+    <br/>
+    <span class="command"> (tar -xvf archive-name.tar.gz) </span>
+    <br/>
+    The JDK archive will be extracted into the ./jdk-name directory. Now move the JDK directoy to /usr/lib 
+    <br/>
+    <span class="command"> (sudo mv ./jdk-name /usr/lib/jvm/jdk-name) </span>
+    <br/>
+    Moving the JDK to that location makes it a configurable alternative in your Linux
+    environment, which is useful if you have projects or programs that require other versions
+    of the JRE or JDK. Now run:
+    <br/>
+    <span class="command">
+        sudo update-alternatives --install "/usr/bin/java" "java" \ "/usr/lib/jvm/jdk-name/bin/java" 1
+    </span>
+    <br/>
+    <span class="command">
+        sudo update-alternatives --install "/usr/bin/javac" "javac" \ "/usr/lib/jvm/jdk-name.0/bin/javac" 1
+    </span>
+    <br/>
+    <span class="command">
+        sudo update-alternatives --install "/usr/bin/javaws" "javaws" \ "/usr/lib/jvm/jdk-name/bin/javaws" 1
+    </span>
+    <br/>
+    <span class="command">
+        sudo update-alternatives --config java
+    </span>
+    <br/>
+    You will see output similar to that shown here:
+    <div class="image">
+    <img src="{{scope_image('/java_choice.png')}}"/>
+    </div>
+    When you select the JDK you are installing, you will see the output like this:
+    <div class="image">
+    <img src="{{scope_image('/after_select_jdk.png')}}"/>
+    </div>
+    Repeat the preceding selection process for javac:
+    <br/>
+    <span class="command">
+       sudo update-alternatives --config javac
+    </span>
+    <br/>
+    And for javaws:
+    <br/>
+    <span class="command">
+       sudo update-alternatives --config javaws 
+    </span>
+</p>

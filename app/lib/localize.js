@@ -15,8 +15,12 @@ this.angular.module('localization', []).
             language:$window.navigator.userLanguage || $window.navigator.language,
             // array to hold the localized resource string entries
             dictionary:[],
+
             // flag to indicate if the service hs loaded the resource file
             resourceFileLoaded:false,
+
+            //array of extra language files to load
+            additional_paths:[],
 
             successCallback:function (data) {
                 // store the returned array in the dictionary
@@ -29,19 +33,30 @@ this.angular.module('localization', []).
 
             setLanguage: function(value) {
                 localize.language = value;
-                localize.initLocalizedResources();
+                localize.initAllLocalizedResources();
             },
 
-            initLocalizedResources:function () {
-                // build the url to retrieve the localized resource file
-                var url = '/i18n/resources-locale_' + localize.language + '.js';
-                // request the resource file
-                $http({ method:"GET", url:url, cache:false }).success(localize.successCallback).error(function () {
-                    // the request failed set the url to the default resource file
-                    var url = '/i18n/resources-locale_default.js';
-                    // request the default resource file
-                    $http({ method:"GET", url:url, cache:false }).success(localize.successCallback);
+            initLocalizedResources:function (path) {
+              if (path == null || typeof(path) == 'undefined') {
+                path = 'i18n';
+              }
+              var url = path + '/resources-locale_' + localize.language + '.js';
+              $http({ method:"GET", url:url, cache:false }).success(function(data) {
+                localize.successCallback(localize.dictionary.concat(data));
+              }).error(function () {
+                var url = path + '/resources-locale_default.js';
+                $http({ method:"GET", url:url, cache:false }).success(function(data) {
+                  localize.successCallback(localize.dictionary.concat(data));
                 });
+              });
+            },
+
+            initAllLocalizedResources:function () {
+              var paths = ['/i18n'].concat(localize.additional_paths)
+              localize.dictionary = []
+              for(var i = 0; i < paths.length; i++) {
+                localize.initLocalizedResources(paths[i]);
+              }
             },
 
             getLocalizedString: function(value) {
@@ -71,7 +86,7 @@ this.angular.module('localization', []).
         };
 
         // force the load of the resource file
-        localize.initLocalizedResources();
+        localize.initAllLocalizedResources();
 
         // return the local instance when called
         return localize;
