@@ -54,6 +54,10 @@
     "value": "Deploy your android app"
   },
   {
+    "key": "change_memory_game",
+    "value": "Change memory game"
+  },
+  {
     "key": "making_an_android_project",
     "value": "Making an android project"
   }

@@ -32,7 +32,6 @@
       if (!$scope.topic_exists()) {
         return false;
       }
-      console.log('chapter');
       _ref = $scope.chapters;
       _results = [];
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {

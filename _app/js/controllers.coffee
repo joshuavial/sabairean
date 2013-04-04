@@ -17,7 +17,6 @@
   $scope.get_chapter = ($routeParams) ->
     $scope.get_topic($routeParams)
     return false unless $scope.topic_exists()
-    console.log('chapter')
     for chapter in $scope.chapters
       $scope.chapter = chapter if chapter.key == $routeParams.chapter_key
 
