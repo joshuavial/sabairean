@@ -1,0 +1,10 @@
+[
+  {
+     "name" : "Setup your android environment",
+     "key" : "setup_android_environment"
+  },
+  {
+     "name" : "Deploy your android app",
+     "key" : "deploy_android_app"
+  }
+]

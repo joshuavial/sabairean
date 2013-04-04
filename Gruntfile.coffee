@@ -3,14 +3,13 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON('package.json')
 
     clean:
-      files: ["tmp/"]
+      files: ["tmp/", "app/css", "app/js", "app/partials"]
 
     haml:
       app:
         files: 
           "app/index.html" : "_app/index.haml"
-          "app/partials/partial1.html" : "_app/partials/partial1.haml"
-          "app/partials/partial2.html" : "_app/partials/partial2.haml"
+          "app/partials/chapters.html" : "_app/partials/chapters.haml"
 
     sass:
       dist:

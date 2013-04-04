@@ -1,11 +1,12 @@
 'use strict'
 
-#Controllers
+@AppController = ($scope, localize) ->
+  $scope.setLanguage = (language) ->
+    localize.setLanguage(language)
 
-@MyCtrl1 = ->
 
-@MyCtrl1.$inject = []
+@ChapterController = ($scope, $http) ->
+  $http.get('chapters/chapters.json').success (data) ->
+    $scope.chapters = data
 
-@MyCtrl2 = ->
 
-@MyCtrl2.$inject = []

@@ -1,6 +1,6 @@
 (function() {
   describe('directives', function() {
-    beforeEach(module('myApp.directives'));
+    beforeEach(module('hlApp.directives'));
     return describe('app-version', function() {
       return it('should print current version', function() {
         module(function($provide) {

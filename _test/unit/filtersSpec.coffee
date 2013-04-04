@@ -1,5 +1,5 @@
 describe 'filter', ->
-  beforeEach(module('myApp.filters'))
+  beforeEach(module('hlApp.filters'))
 
   describe 'interpolate', ->
     beforeEach(module(($provide) -> 

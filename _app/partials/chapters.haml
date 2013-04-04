@@ -1,0 +1,4 @@
+%h1{data-i18n:"__chapters__"} Chapters
+%ul#menu_nav
+  %li{ng-repeat: 'chapter in chapters'}
+    {{chapter.key | i18n}}

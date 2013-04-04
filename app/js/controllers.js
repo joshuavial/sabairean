@@ -1,10 +1,14 @@
 (function() {
-  'use strict';  this.MyCtrl1 = function() {};
+  'use strict';  this.AppController = function($scope, localize) {
+    return $scope.setLanguage = function(language) {
+      return localize.setLanguage(language);
+    };
+  };
 
-  this.MyCtrl1.$inject = [];
-
-  this.MyCtrl2 = function() {};
-
-  this.MyCtrl2.$inject = [];
+  this.ChapterController = function($scope, $http) {
+    return $http.get('chapters/chapters.json').success(function(data) {
+      return $scope.chapters = data;
+    });
+  };
 
 }).call(this);

@@ -1,8 +1,8 @@
-describe 'MyCtrl1', ->
-  myCtrl1 = null
+describe 'ChapterCtrl', ->
+  chapterCtrl = null
 
   beforeEach  ->
-    myCtrl1 = new MyCtrl1()
+    chapterCtrl = new ChapterCtrl()
 
   it 'should ....', ->
     #spec body
