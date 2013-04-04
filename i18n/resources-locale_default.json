@@ -23,6 +23,16 @@
     "value": "Previous"
   },
   {
+    "key": "android_basics",
+    "value": "Android :: Basics",
+    "description": "Topic for basics of android"
+  },
+  {
+    "key": "first_android_app",
+    "value": "Android :: Your first app",
+    "description": "Topic for your first android app"
+  },
+  {
     "key": "android_setup",
     "value": "Android :: Setup",
     "description": "Topic for setting up android"
@@ -30,6 +40,10 @@
   {
     "key": "setup_android_environment",
     "value": "Setup your android environment"
+  },
+  {
+    "key": "converting_khmer_unicode",
+    "value": "Converting Khmer unicode"
   },
   {
     "key": "deploy_android_app",

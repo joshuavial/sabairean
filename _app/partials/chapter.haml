@@ -1,4 +1,4 @@
-%h1 {{chapter_key | i18n}}
+%h1 {{chapter.key | i18n}}
 %ul.steps
   %li{ng-repeat: 'step in config.steps'}
     %a{href: "#topics/{{topic.key}}/chapters/{{chapter.key}}/{{step}}"} {{step}}

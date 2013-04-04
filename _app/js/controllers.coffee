@@ -8,34 +8,37 @@
     $scope.topics = data.topics
 
   $scope.get_topic = ($routeParams) ->
+    return false unless angular.isDefined($scope.topics)
     for topic in $scope.topics
-      $scope.topic = topic if topic.key = $routeParams.topic_key
-      $scope.chapters = $scope.topic.chapters
+      if topic.key == $routeParams.topic_key
+        $scope.topic = topic
+        $scope.chapters = $scope.topic.chapters
+
+  $scope.get_chapter = ($routeParams) ->
+    $scope.get_topic($routeParams)
+    return false unless $scope.topic_exists()
+    console.log('chapter')
+    for chapter in $scope.chapters
+      $scope.chapter = chapter if chapter.key == $routeParams.chapter_key
 
   $scope.topic_exists = () ->
     return false unless angular.isDefined($routeParams.topic_key)
     angular.isDefined($scope.topic)
 
-  $scope.get_chapter = ($routeParams) ->
-    $scope.get_topic($routeParams)
-    for chapter in $scope.chapters
-      $scope.chapter = chapter if chapter.key == $routeParams.chapter_key
-
   $scope.chapter_exists = () ->
     return false unless angular.isDefined($routeParams.chapter_key)
     angular.isDefined($scope.chapter)
 
+  $scope.get_step = ($routeParams) ->
+
+@TopicController = () ->
+
 @ChapterController = ($scope, $routeParams) ->
   $scope.get_topic($routeParams)
   $scope.chapters = $scope.topic.chapters
-  console.log($scope.topic)
-  console.log($scope.chapters)
 
-@TopicController = ($scope,$routeParams) ->
-
-@ChapterDetailController = ($scope, $http, $routeParams, localize) ->
+@StepController = ($scope, $http, $routeParams, localize) ->
   $scope.get_chapter($routeParams)
-  console.log($scope.chapter)
   $scope.path = "chapters/#{$scope.chapter.key}"
 
   set_step_path = () ->
@@ -46,7 +49,7 @@
   $scope.step = $routeParams.step
   set_step_path()
 
-  $http.get("chapters/#{$scope.chapter.key}/config.js").success (data) ->
+  $http.get("chapters/#{$scope.chapter.key}/config.json").success (data) ->
     $scope.config = data
     $scope.step = data.steps[0] if typeof($scope.step) == 'undefined'
     set_step_path()

@@ -9,10 +9,10 @@
         controller: ChapterController
       }).when('/topics/:topic_key/chapters/:chapter_key', {
         templateUrl: 'partials/chapter.html',
-        controller: ChapterDetailController
+        controller: StepController
       }).when('/topics/:topic_key/chapters/:chapter_key/:step', {
         templateUrl: 'partials/chapter.html',
-        controller: ChapterDetailController
+        controller: StepController
       }).otherwise({
         redirectTo: '/topics'
       });

@@ -9,12 +9,36 @@
           "key": "setup_android_environment"
         },
         {
-          "name": "Deploy your android app",
-          "key": "deploy_android_app"
-        },
-        {
           "name": "Making an android project",
           "key": "making_an_android_project"
+        }
+      ]
+    },
+    {
+      "key": "android_basics",
+      "name": "Android Basics",
+      "chapters": [
+        {
+          "name": "Converting Khmer Unicode",
+          "key": "converting_khmer_unicode"
+        },
+        {
+          "name": "Deploy your android app",
+          "key": "deploy_android_app"
+        }
+      ]
+    },
+    {
+      "key": "first_android_app",
+      "name": "My first Android app",
+      "chapters": [
+        {
+          "name": "Taking and resizing photo",
+          "key": "taking_and_resizing_photo"
+        },
+        {
+          "name": "Deploy your android app",
+          "key": "do_the_interesting_thing"
         }
       ]
     }
