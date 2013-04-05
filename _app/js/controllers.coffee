@@ -41,19 +41,22 @@
   $scope.path = "chapters/#{$scope.chapter.key}"
 
   set_step_path = () ->
-    $scope.step_path = "#{$scope.path}/#{$scope.step}"
-    localize.additional_paths = ["chapters/#{$scope.chapter.key}/i18n"]
-    localize.initAllLocalizedResources()
+    $scope.step_file = "#{$scope.path}/i18n/#{localize.language}/#{$scope.step}"
+    $http.get($scope.step_file).error () ->
+      console.log('jbv')
+      $scope.step_file = "#{$scope.path}/#{$scope.step}"
+
+  $scope.scope_image = (image) ->
+    "#{$scope.path}/images/#{image}"
+
+  $scope.$on 'localizeResourcesUpdates', () ->
+    set_step_path()
 
   $scope.step = $routeParams.step
-  set_step_path()
 
   $http.get("chapters/#{$scope.chapter.key}/config.json").success (data) ->
     $scope.config = data
     $scope.step = data.steps[0] if typeof($scope.step) == 'undefined'
     set_step_path()
-
-  $scope.scope_image = (image) ->
-    "#{$scope.path}/images/#{image}"
 
 

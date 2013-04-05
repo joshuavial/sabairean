@@ -72,22 +72,26 @@
     $scope.get_chapter($routeParams);
     $scope.path = "chapters/" + $scope.chapter.key;
     set_step_path = function() {
-      $scope.step_path = "" + $scope.path + "/" + $scope.step;
-      localize.additional_paths = ["chapters/" + $scope.chapter.key + "/i18n"];
-      return localize.initAllLocalizedResources();
+      $scope.step_file = "" + $scope.path + "/i18n/" + localize.language + "/" + $scope.step;
+      return $http.get($scope.step_file).error(function() {
+        console.log('jbv');
+        return $scope.step_file = "" + $scope.path + "/" + $scope.step;
+      });
     };
+    $scope.scope_image = function(image) {
+      return "" + $scope.path + "/images/" + image;
+    };
+    $scope.$on('localizeResourcesUpdates', function() {
+      return set_step_path();
+    });
     $scope.step = $routeParams.step;
-    set_step_path();
-    $http.get("chapters/" + $scope.chapter.key + "/config.json").success(function(data) {
+    return $http.get("chapters/" + $scope.chapter.key + "/config.json").success(function(data) {
       $scope.config = data;
       if (typeof $scope.step === 'undefined') {
         $scope.step = data.steps[0];
       }
       return set_step_path();
     });
-    return $scope.scope_image = function(image) {
-      return "" + $scope.path + "/images/" + image;
-    };
   };
 
 }).call(this);
