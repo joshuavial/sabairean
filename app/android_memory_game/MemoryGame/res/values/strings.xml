@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="creator_name"> ជ​ រស </string>
+    <string name="mainTitle"> លងចង </string>
+    <string name="composed_by"> របរងដយ​​ ​​</string>
+    
+     <string-array name="type">
+        <item> New Game </item> 
+        <item>4 X 4</item>
+        <item>4 X 5</item>
+        <item>4 X 6</item>
+        <item>5 X 6</item>
+        <item>6 X 6</item>
+    </string-array>
+    
+</resources>
