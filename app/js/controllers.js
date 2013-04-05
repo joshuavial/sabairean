@@ -74,7 +74,6 @@
     set_step_path = function() {
       $scope.step_file = "" + $scope.path + "/i18n/" + localize.language + "/" + $scope.step;
       return $http.get($scope.step_file).error(function() {
-        console.log('jbv');
         return $scope.step_file = "" + $scope.path + "/" + $scope.step;
       });
     };

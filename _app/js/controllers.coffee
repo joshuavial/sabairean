@@ -43,7 +43,6 @@
   set_step_path = () ->
     $scope.step_file = "#{$scope.path}/i18n/#{localize.language}/#{$scope.step}"
     $http.get($scope.step_file).error () ->
-      console.log('jbv')
       $scope.step_file = "#{$scope.path}/#{$scope.step}"
 
   $scope.scope_image = (image) ->

@@ -5,28 +5,61 @@
     "description" : "Title of app"
   },
   {
-    "key" : "__chapters__",
-    "value" : "Chapters--",
-    "description" : "Heading for chapters"
+  "key": "__topics__",
+  "value": "Topics",
+  "description": "Heading for topics"
   },
   {
-    "key"   : "__next__",
-    "value" : "Next--"
+  "key": "__chapters__",
+  "value": "Chapters",
+  "description": "Heading for chapters"
   },
   {
-    "key"   : "__previous__",
-    "value" : "Previous--"
+  "key": "__next__",
+  "value": "Next"
   },
   {
-    "key"   : "setup_android_environment",
-    "value" : "Setup your android environment--"
+  "key": "__previous__",
+  "value": "Previous"
   },
   {
-    "key"   : "deploy_android_app",
-    "value" : "Deploy your android app--"
+  "key": "android_basics",
+  "value": "Android :: Basics",
+  "description": "Topic for basics of android"
   },
   {
-    "key"   : "making_an_android_project",
-    "value" : "Making an android project"
+  "key": "first_android_app",
+  "value": "Android :: Your first app",
+  "description": "Topic for your first android app"
+  },
+  {
+  "key": "android_setup",
+  "value": "Android :: Setup",
+  "description": "Topic for setting up android"
+  },
+  {
+  "key": "setup_android_environment",
+  "value": "Setup your android environment"
+  },
+  {
+  "key": "taking_and_resizing_photo",
+  "value": "Prepare photos for game"
+  },
+  {
+  "key": "converting_khmer_unicode",
+  "value": "Converting Khmer unicode"
+  },
+  {
+  "key": "deploy_android_app",
+  "value": "Deploy your android app"
+  },
+  {
+  "key": "change_memory_game",
+  "value": "Memory game changes 1"
+  },
+  {
+  "key": "making_an_android_project",
+  "value": "Making an android project"
   }
 ]
+
