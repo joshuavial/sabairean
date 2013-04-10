@@ -21,22 +21,6 @@ body {
   body a {
     color: #489fd4; }
 
-.notes {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  color: #666666; }
-
-.frontpage {
-  background-image: url(images/image_frontpage.jpg);
-  background-repeat: no-repeat; }
-
-.sabCopyB {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #666666;
-  font-style: normal;
-  font-weight: bold; }
-
 .breadcrumbs li {
   display: inline;
   list-style: none; }
