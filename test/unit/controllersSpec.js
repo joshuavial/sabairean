@@ -4,7 +4,7 @@
 
     chapterCtrl = null;
     beforeEach(function() {
-      return chapterCtrl = new ChapterCtrl();
+      return chapterCtrl = new ChapterController();
     });
     return it('should ....', function() {});
   });
