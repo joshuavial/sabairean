@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON('package.json')
 
     clean:
-      files: ["tmp/", "app/css", "app/js", "app/partials"]
+      files: ["tmp/", "app/css", "app/js", "app/partials", "test/unit", "test/e2e"]
 
     haml:
       app:

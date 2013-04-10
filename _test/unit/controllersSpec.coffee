@@ -2,7 +2,7 @@ describe 'ChapterCtrl', ->
   chapterCtrl = null
 
   beforeEach  ->
-    chapterCtrl = new ChapterCtrl()
+    chapterCtrl = new ChapterController()
 
   it 'should ....', ->
     #spec body
