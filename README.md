@@ -6,12 +6,13 @@ goal is to provide technical learning resources to people in their
 native language to help foster development communities in developing
 countries.
 
-See www.sabairean.com for more information.
+The first use case we are focusing on is android development in Cambodia
+- see www.sabairean.com for more information.
 
 * [Documentation](https://github.com/joshuavial/sabairean/wiki)
+* [Bug Tracker](https://github.com/joshuavial/sabairean/wiki)
 * [Mailing
   list](https://groups.google.com/forum/?fromgroups#!forum/sabaireanapp)
-* [Bug Tracker](https://github.com/joshuavial/sabairean/wiki)
 
 #Getting started
 
