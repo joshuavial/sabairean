@@ -1,64 +1,64 @@
 [
   {
     "key": "__title__",
-    "value": "Happy Learning",
+    "value": "Sabai rean",  Apprendre en s'amusant
     "description": "Title of app"
   },
   {
     "key": "__topics__",
-    "value": "Topics",
+    "value": "Sujet",
     "description": "Heading for topics"
   },
   {
     "key": "__chapters__",
-    "value": "Chapters",
+    "value": "Chapitres",
     "description": "Heading for chapters"
   },
   {
     "key": "__next__",
-    "value": "Next"
+    "value": "Suivant"
   },
   {
     "key": "__previous__",
-    "value": "Previous"
+    "value": "Précédent"
   },
   {
     "key": "android_basics",
-    "value": "Android :: Basics",
+    "value": "Android :: Bases",
     "description": "Topic for basics of android"
   },
   {
     "key": "first_android_app",
-    "value": "Android :: Your first app",
+    "value": "Android :: Ta première app",
     "description": "Topic for your first android app"
   },
   {
     "key": "android_setup",
-    "value": "Android :: Setup",
+    "value": "Android :: instalation",
     "description": "Topic for setting up android"
   },
   {
     "key": "setup_android_environment",
-    "value": "Setup your android environment"
+    "value": "Installes ton environnement de développement pour android" 
   },
   {
     "key": "taking_and_resizing_photo",
-    "value": "Prepare photos for game"
+    "value": "Prépares les photos pour le jeu"
   },
   {
     "key": "converting_khmer_unicode",
-    "value": "Converting Khmer unicode"
+    "value": "Convertis Khmer unicode"
   },
   {
     "key": "deploy_android_app",
-    "value": "Deploy your android app"
+    "value": "Déploies ton app pour android "
   },
   {
     "key": "change_memory_game",
-    "value": "Memory game changes 1"
+    "value": "Changement 1 du Jeu de mémoire " 
   },
   {
     "key": "making_an_android_project",
-    "value": "Making an android project"
+    "value": "Créer un projet pour android "
   }
 ]
