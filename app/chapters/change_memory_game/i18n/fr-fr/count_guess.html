@@ -1,0 +1,47 @@
+<body>
+    <h1> Add Guess Counter To Your Application </h1>
+    
+    <p>
+        Every time you open the cards, there will be a counter showing you how many guess you have tried.
+        Adding counter to your game, you have to add another textview and create function for counting
+        how many time have opened the pair of card.
+    </p>
+    
+    <p>
+        Description below show the steps for producing the counter:
+    </p>
+    
+    <h2> Add New TextView To The Screen </h2>
+    
+    First step for creating the counter, you need to create a textview for displaying the text.
+    Since your application name is MemoryGame, you need to do the following step:
+    
+    <ul>
+        <li> Go to MemoryGame -> res -> layout -> main.xml </li>
+        <li> Once you have open the file <b> main.xml </b> press <b> Ctrl + F </b> to find keyword <b> TableRow01 </b> </li>
+        <div class="images"> <img src="images/add_view.png" /> </div>
+        <li> Type the code hightligh in red square to the top of TableRow1 (as shown in images) </li>
+        <li> Click on Save when you finish </li>
+    </ul>
+    
+    <h2> Make The Counter Work </h2>
+    
+    <p>
+        The next step is to add counter to the code:
+    </p>
+    
+    <ul>
+        <li> Go to MemoryGame -> src -> com.aviy.memory -> Manager.java </li>
+        <li> Once you have open the file <b> Manager.java </b> press <b> Ctrl + F </b> to find keyword <b> newGame </b> </li>
+        <div class="images"> <img src="images/add_counter.png" /> </div>
+        <li> Add the code highlighted in red box to the bottom of the function </li>
+        <li> Inside function setText, copy the Khmer unicode that you have converted in chapter <b> Converting Khmer Unicode </b> to it. </li>
+        <li> Now you have show counter when initialize the game, block of code above mean to set counter to 0 </li>
+        <li> On your keyboard press <b> Ctrl + F </b> again and search for keyword <b> turnCard </b> </li>
+        <div class="images"> <img src="images/add_another_counter.png" /> </div>
+        <li> Copy the red highlighted code to the location showing in the image above. </li>
+        <li> Click Save when you finish </li>
+    </ul>
+    
+    <p> Now deploy your application again, you will see the counter in your game. </p>
+</body>
