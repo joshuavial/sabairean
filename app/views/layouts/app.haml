@@ -1,0 +1,42 @@
+!!!
+%html{lang: 'en', 'ng-app' => 'hlApp'}
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+      %title{'data-i18n' => "__title__"}
+      %meta{:content => content_for?(:description) ? yield(:description) : "Sabairean", :name => "description"}
+        = stylesheet_link_tag "application", :media => "all"
+        = javascript_include_tag "application"
+        = csrf_meta_tags
+        = yield(:head)
+  %body{'ng-controller' => 'AppController'}
+    %ul.choose_language
+      %li
+        %a{'ng-click'=>"setLanguage('en')"} English
+      %li
+        %a{'ng-click'=>"setLanguage('kh-kh')"} ភាសាខ្មែរ
+      %li
+        %a{'ng-click'=>"setLanguage('fr-fr')"} Français
+
+    %h1.title{'data-i18n' => '__title__'}
+
+    %ul.breadcrumbs
+      %li
+        %a{href:"#"} {{"__topics__" | i18n}}
+      %li{'ng-show' => 'topic_exists()'}
+        %a{href:"#/topics/{{topic.key}}"} {{topic.key | i18n}}
+      %li{'ng-show' => 'chapter_exists()'}
+        %a{href:"#/topics/{{topic.key}}/chapters/{{chapter.key}}"} {{chapter.key | i18n}}
+
+    %div{'ng-view' => ''}
+
+    /#container.container
+    /  %header
+    /    = render 'layouts/navigation'
+    /    = render 'layouts/messages'
+    /  #main{:role => "main"}
+
+    /    = yield
+    /  %footer
+    / ! end of #container
+
+

@@ -1,0 +1,30 @@
+<h1>Adding Build Targets to the SDK</h1>
+<p>
+    Before you can build an Android application, or even create a project that would try to
+build an Android application, you must install one or more build targets. To do this,
+you will use the SDK and AVD Manager. This tool enables you to install packages in
+the SDK that will support multiple versions of the Android OS and multiple API levels.
+</p>
+
+<p>
+   Once the ADT plug-in is installed in Eclipse, which we describe in the next section, the
+SDK and AVD Manager can be invoked from within Eclipse. It can also be invoked from the command line, 
+which is how we will do it here. To invoke the SDK and AVD
+Manager from the command line, issue this command: <div class="command"> android </div> 
+</p>
+
+<p>
+    This is the SDK and AVD Manager, with all the available SDK versions for installation.
+    <br/>
+    <img src="{{scope_image('/SDKandAVDManager.png')}}" />
+</p>
+
+<p>
+    The packages labeled “SDK Platform” support building applications compatible with
+different Android API levels. You should install, at a minimum, the most recent (highest-
+numbered) version, but installing all the available API levels, and all the Google API
+add-on packages, is a good choice if you might someday want to build applications
+that run on older Android versions. You should also install, at a minimum, the most
+recent versions of the example applications package. You must also install the Android
+SDK Platform-Tools package.
+</p>

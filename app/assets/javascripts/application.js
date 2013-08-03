@@ -11,6 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require angular
+//= require angular-ui
+//= require angularjs/rails/resource
+//= require localize
+//= require ../angular/app
+//= require_tree ../angular

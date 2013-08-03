@@ -1,0 +1,64 @@
+[
+  {
+    "key": "__title__",
+    "value": "Sabai rean,  Apprendre en s'amusant",
+    "description": "Title of app"
+  },
+  {
+    "key": "__topics__",
+    "value": "Sujet",
+    "description": "Heading for topics"
+  },
+  {
+    "key": "__chapters__",
+    "value": "Chapitres",
+    "description": "Heading for chapters"
+  },
+  {
+    "key": "__next__",
+    "value": "Suivant"
+  },
+  {
+    "key": "__previous__",
+    "value": "Précédent"
+  },
+  {
+    "key": "android_basics",
+    "value": "Android :: Bases",
+    "description": "Topic for basics of android"
+  },
+  {
+    "key": "first_android_app",
+    "value": "Android :: Ta première app",
+    "description": "Topic for your first android app"
+  },
+  {
+    "key": "android_setup",
+    "value": "Android :: instalation",
+    "description": "Topic for setting up android"
+  },
+  {
+    "key": "setup_android_environment",
+    "value": "Installes ton environnement de développement pour android" 
+  },
+  {
+    "key": "taking_and_resizing_photo",
+    "value": "Prépares les photos pour le jeu"
+  },
+  {
+    "key": "converting_khmer_unicode",
+    "value": "Convertis Khmer unicode"
+  },
+  {
+    "key": "deploy_android_app",
+    "value": "Déploies ton app pour android "
+  },
+  {
+    "key": "change_memory_game",
+    "value": "Changement 1 du Jeu de mémoire " 
+  },
+  {
+    "key": "making_an_android_project",
+    "value": "Créer un projet pour android "
+  }
+]

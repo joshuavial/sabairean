@@ -1,0 +1,68 @@
+<h1>
+    The Android SDK
+</h1>
+
+<p>
+    With the JDK and Eclipse installed, you have the prerequisites for the Android SDK,
+and are ready to install the SDK. The Android SDK is a collection of files: libraries,
+executables, scripts, documentation, and tools. Installing the SDK means downloading
+the correct version of the SDK for your platform and putting the SDK files into a folder
+in your home directory. There is no installation script. Later, you will configure an
+Eclipse plug-in so it can find where you put the SDK. The appearance, requirements,
+and functionality of the Android toolkit are changing very rapidly. The following outlined
+process is a guideline that may not exactly reflect your experience. The most recent
+documentation can always be found at <a href="http://developer.android.com/tools/index.html">http://developer.android.com/tools/index.html</a>.
+</p>
+
+<p>
+    To install the SDK, download the SDK package that corresponds to your system from 
+    <a href="http://developer.android.com/sdk/index.html">http://developer.android.com/sdk/index.html</a>.
+</p>
+
+<p>
+    The SDK contains one or two folders for tools: one named tools and, starting in version
+8 of the SDK, another called platform-tools. These folders need to be on your path,
+which is a list of folders your system searches for executable files when you invoke an
+executable from the command line.
+</p>
+
+<h3>
+    Configure SDK path on Macintosh and Linux system
+</h3>
+<p>
+    In order to configure SDK path, the PATH environment variable should be done in:
+    <ul>
+        <li>
+            .profile (Ubuntu)
+        </li>
+        <li>
+            .bash_profile (Mac OS X)
+        </li>
+    </ul>
+</p>
+<p>
+    Add a line to that file that sets the PATH environment variable
+to include the tools directory in the SDK (individual entries in the list are separated by
+colons). For example, you could use the following line (but replace both instances of
+~/android-sdk-ARCH with the full path to your Android SDK install):
+<div class="command">
+    export PATH=$PATH:~/android-sdk-ARCH/tools:~/android-sdk-ARCH/platform-tools
+</div>
+</p>
+
+<h3>
+    Configure SDK path on Window
+</h3>
+<ul>
+    <li> Start -> right-Click Computer</li>
+    <li> Properties </li>
+    <li> Advance system setting </li>
+    <li> Environment Variable </li>
+    <li> Double click the path system variable </li>
+    <li> Add path to the folders by going to the end of this variable's value </li>
+    <li> Adding the two paths to the end, separated by semicolons with no space before them Example: <i>;C:\android-sdk-windows\tools;C:\android-sdk-windows\platform-tools</i></li>
+</ul>
+
+<p>
+    After you’ve edited your path on Windows, Mac, or Linux, close and reopen any Command Prompts or Terminals
+</p>

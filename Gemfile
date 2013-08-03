@@ -14,6 +14,11 @@ gem 'haml-rails'
 gem 'pg'
 
 gem 'rails_karma'
+gem 'angularjs-rails'
+gem 'angular-ui-rails'
+gem 'angularjs-rails-resource'
+
+gem 'twitter-bootstrap-rails'
 
 group :development do
   gem 'better_errors'

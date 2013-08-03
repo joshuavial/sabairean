@@ -1,0 +1,60 @@
+<h1>
+    ដាក់រូបថតរបស់អ្នកក្នុងហ្កេម
+</h1>
+
+<p>
+    ចាប់ផ្ដើមសាកធ្វើអ្វីមួុយដែលប្លែក និង គួរអោយចង់លេង។ យើងនឹងដាក់បញ្ចូលរូបថតរបស់យើងទៅក្នុងប្រពន្ធ័ចងចាំរបស់ហ្កេម ដើម្បីដាក់បង្ហាញនៅក្នុងកាតក្រលាការូ។
+</p>
+
+<p>
+    សូមអនុវត្តន៍តាមការបង្ហាញជាលំដាប់នេះ ដើម្បីកែររចនាកូតហ្កេមរបស់អ្នក៖
+</p>
+
+<ul>
+<li>
+    ចំលងរូបថតដែលអ្នកបានកែរសំរួលនៅក្នុងជំពូក​(ថតរូប និង ការកែររូប) ទៅក្នុងប្រអប់
+    YourProject -> MemoryGame -> res -> drawable </li>
+<li>
+    បើក
+    Eclipse
+    និង ចូលទៅក្នុង ទីតាំងការងារគំរោង
+</li>
+<li>
+    ដោយសារ គំរោងរបស់អ្នក ឈ្មោះ
+    MemoryGame
+    ដូច្នេះអ្នកអាចចួលក្នុងប្រអប់នេះ
+</li>
+<li> MemoryGame -> src -> com.aviy.memory -> Manager.java </li>
+<li>
+    នៅលើ keyboard, ចុច
+    <b>Ctrl + F</b> ,
+    ហើយសរសេ
+    <b>private void loadImages</b>
+    ចុច
+    Find
+</li>
+<img src="{{scope_image('find_and_replace.png')}}" />
+
+<li>
+    ពេលដែលរកឃើញ, សូមសរសេ
+    <b><i> images.add(getResources().getDrawable(R.drawable.yourPhotoName)); </i></b></li>
+
+<img src="{{scope_image('code_change_image.png')}}" />
+<li>
+    ពេលដែលអ្នកសរសេចប់, ចុច
+    <b> Ctrl + S </b>
+    ដើម្បីរក្សាទុក
+</li>
+<li>
+    អ្នកអាចបង្កើតឯកសារ
+    .apk file
+    ដោយធ្វើតាមជំពូក
+    (Deploy Android App -> Create APK File)
+    ឬ ដំនើរការ
+    emulator
+    ដោយធ្វើតាមជំពូក
+    (Making An Android Project ->
+    ជំហ៊ានទី 4
+    )
+</li>
+</ul>

@@ -1,0 +1,78 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Eclipe Integrated Development Environment (IDE)</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link REL="StyleSheet" TYPE="text/css" HREF="../css/style.css"> 
+    </head>
+    <body>
+        <h1>
+            The Eclipse Integrated Development Environment (IDE)
+        </h1>
+        <p>
+            Eclipse is usually used as an IDE for writing, testing, and debugging software, especially
+            Java software. There are also several derivative IDEs and SDKs for various kinds of Java
+            software development based on Eclipse. In this case, you will take a widely used Eclipse
+            package and add a plug-in to it to make it usable for Android software development.
+            Let’s get that Eclipse package and install it.
+        </p>
+<!--        <br/>-->
+        <p>
+           Eclipse can be downloaded from <a href="http://www.eclipse.org/downloads">http://www.eclipse.org/downloads</a>
+        </p>
+<!--        <br/>-->
+        <p>
+            The System Requirements article on the
+Android Developers site lists three choices of Eclipse packages as a basis for an Eclipse
+installation for Android software development:
+            <ul>
+                <li>Eclipse Classic (for Eclipse 3.5 or later)</li>
+                <li>Eclipse IDE for JAVA developers</li>
+                <li>Eclipse for RCP/Plug-in Developers</li>
+            </ul>
+            Any of these will work, though unless you are also developing Eclipse plug-ins, choosing
+either Classic or the Java Developers package (EE or Standard) makes the most
+sense.
+        </p>
+        <p>
+            The Eclipse download site will automatically determine the available system-specific
+downloads for your system, though you may have to choose between 32 and 64 bits to
+match your operating system. The file you download is an archive. To install Eclipse,
+open the archive and copy the eclipse folder to your home folder. The executable file
+for launching Eclipse on your system will be found in the folder you just extracted from
+the archive.
+        </p>
+        
+        <p>
+            If you are using Ubuntu or another Linux distribution, you should not install Eclipse
+from your distribution’s repositories, and if it is currently installed this way, you must
+remove it and install Eclipse as described here. The presence of an “eclipse” package
+in the Ubuntu repositories is an inheritance from the Debian repositories on which
+Ubuntu is based. It is not a widely used approach to installing and using Eclipse, because
+most of the time, your distribution’s repositories will have older versions of
+Eclipse.
+        </p>
+<!--        <br/>-->
+        <p>
+            To confirm that Eclipse is correctly installed and that you have a JRE that supports
+Eclipse, launch the executable file in the Eclipse folder. You may want to make a shortcut
+to this executable file to launch Eclipse more conveniently. You should see the
+Welcome screen as follows:
+            <br/>
+            <div class="image">
+                <img src="{{scope_image('/eclipse_welcome.png')}}"/>
+            </div>
+        </p>
+        
+        <p>
+            Eclipse is implemented in Java and requires a JRE. The JDK you previously installed
+provides a JRE. If Eclipse does not run, you should check that the JDK is correctly
+installed.
+            
+        </p>
+    </body>
+</html>
