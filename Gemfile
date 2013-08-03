@@ -34,4 +34,5 @@ group :test do
   gem 'poltergeist', '>= 1.3.0'
   gem 'shoulda'
   gem 'launchy'
+  gem 'coveralls'
 end
