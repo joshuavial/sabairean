@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/enspiral/playhouse.png?branch=master)](https://travis-ci.org/enspiral/playhouse)
+[![Coverage Status](https://coveralls.io/repos/joshuavial/sabairean/badge.png)](https://coveralls.io/r/joshuavial/sabairean)
+[![Code Climate](https://codeclimate.com/github/joshuavial/sabairean.png)](https://codeclimate.com/github/joshuavial/sabairean)
+
 ###Sabairean - Learn to program in your own language
 
 Sabairean is an initiative that was launched during the [GFN
