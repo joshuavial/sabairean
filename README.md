@@ -1,4 +1,4 @@
-#Sabairean - Learn to program in your own language
+###Sabairean - Learn to program in your own language
 
 Sabairean is an initiative that was launched during the [GFN
 challenge](http://www.gfnchallenge.org) in Cambodia in April 2013. The
@@ -7,12 +7,8 @@ native language to help foster development communities in developing
 countries.
 
 The first use case we are focusing on is android development in Cambodia
-- see www.sabairean.com for more information.
 
-* [Documentation](https://github.com/joshuavial/sabairean/wiki)
-* [Bug Tracker](https://github.com/joshuavial/sabairean/wiki)
-* [Mailing
-  list](https://groups.google.com/forum/?fromgroups#!forum/sabaireanapp)
+Checkout these [useful links](https://www.loomio.org/discussions/5657) to find out more about the project
 
 #Getting started
 
