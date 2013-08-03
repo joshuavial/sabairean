@@ -31,5 +31,7 @@ group :test do
   gem 'cucumber-rails', :require=>false
   gem 'database_cleaner'
   gem 'email_spec'
+  gem 'poltergeist', '>= 1.3.0'
+  gem 'shoulda'
   gem 'launchy'
 end
