@@ -19,6 +19,7 @@ gem 'angular-ui-rails'
 gem 'angularjs-rails-resource'
 
 gem 'twitter-bootstrap-rails'
+gem 'bloggy'
 
 group :development do
   gem 'better_errors'

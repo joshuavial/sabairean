@@ -1,19 +1,8 @@
-%table{:border => '0', :cellpadding => '0', :cellspacing => '0', :width => '780'}
-  %tr
-    %td{:width => '120'}
-      %a{:href => 'http://cambodia.worlded.org/', :target => '_blank'}
-        = image_tag 'worldeducation_logo.jpg'
-    %td{:width => '120'}
-      %a{:href => 'http://www.kapekh.org/', :target => '_blank'}
-        = image_tag 'kape_logo.jpg'
-    %td
-      %div{:align => 'right'}
-        %table{:border => '0', :cellpadding => '0', :cellspacing => '0', :width => '500'}
-          %tr
-            %td
-              .notes{:align => 'right'} This project was created as part of the GFN Chalenge
-            %td{:width => '60'}
-              %div{:align => 'center'}
-                %a{:href => 'http://www.gfnchallenge.org/', :target => '_blank'}
-                  =image_tag 'gfn.gif'
-
+.clearfix
+.supporter-logo= link_to image_tag('supporters/enspiral.png'), 'http://www.enspiral.com', target: '_blank'
+.supporter-logo= link_to image_tag('supporters/instedd.jpg'), 'http://www.ilabsoutheastasia.org', target: '_blank'
+.supporter-logo= link_to image_tag('supporters/worldeducation_logo.jpg'), 'http://cambodia.worlded.org', target: '_blank'
+.supporter-logo= link_to image_tag('supporters/kape_logo.jpg'), 'http://www.kapekh.org', target: '_blank'
+.pull-right.notes
+  This project was created as part of the GFN Chalenge
+  = link_to image_tag('gfn.gif'), 'http://www.gfnchallenge.org'
