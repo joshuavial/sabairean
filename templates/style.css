@@ -1,0 +1,93 @@
+nav li
+{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.language 
+{
+margin-right: 100px;
+
+}
+
+img, .description
+{
+	margin-top: 10px;
+	border: 3px solid black;
+	width: 400px;
+	height: 280px;
+	overflow: hidden;
+	margin-right: 30px;
+	margin-left: 40px;
+
+}
+
+.steps
+{
+	width: 700px;
+	display: block;
+	padding: 50px 0 0 250px
+
+}
+
+
+strong 
+{
+	font-size: 30px;
+}
+
+ol li 
+{
+	padding-bottom: 40px;
+	width: 360px;
+	list-style-type: none;
+}
+
+li p 
+{
+	padding-left: 20px
+}
+
+.start 
+{
+	margin-right: 110px;
+	margin-top: -20px;
+	width : 10%;
+}
+
+
+.numbers 
+{	
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 30px;
+	font-size: 2em;
+	padding-top: 8px ;
+	font-weight: bold;
+	margin-right: 240px;
+	margin-top: -450px;
+}
+
+li p 
+{
+	padding-left: 20px
+}
+
+.one
+{
+	margin-right: 240px;
+	margin-top: -450px;
+}
+
+.two
+{
+	margin-top: -300px;	
+}
+
+.three
+{
+	margin-top: -150px;	
+}
+
