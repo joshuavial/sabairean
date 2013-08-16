@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap-responsive.min.css">
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css" />
+        <title>Sabairean Application - "Memo-Game Step 3 "</title>
+    </head>
+ 
+    <body>
+        <div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h4><a href="course_details.html">Your first App: Memory Game</a></h4>
+				</div>
+			</div>
+
+			<div class="row">
+			    <div class="col-xs-12 col-sm-12 col-md-12">
+			    	<h1 class="text-center step_title">Step 3/5: Add Guess Counter</h1>
+			    </div>
+			</div>
+
+			<div class="row">
+			    <div class="col-xs-12 col-sm-12 col-md-12">
+
+				    	<div class="pull-left previous">
+				    		<a href="#">< Name of the last step</a>
+				    	</div>
+				    	<div class="text-right next">
+				    		<a href="#">Name of the next step></a>
+				    	</div>
+
+				    	<div class="full_step">
+			   
+						    <p class="introduction">
+						        	Every time you open the cards, there will be a counter showing you how many guess you have tried.
+						        Adding counter to your game, you have to add another textview and create function for counting
+						        how many time have opened the pair of card.
+						    </p>
+						    
+						    <p>
+						        Description below show the steps for producing the counter:
+						    </p>
+						    
+						    <h4> Add New TextView To The Screen </h4>
+						    
+						    First step for creating the counter, you need to create a textview for displaying the text.
+						    Since your application name is MemoryGame, you need to do the following step:
+						    
+						    <ul>
+						        <li> Go to MemoryGame -> res -> layout -> main.xml </li>
+						        <li> Once you have open the file <b> main.xml </b> press <b> Ctrl + F </b> to find keyword <b> TableRow01 </b> </li>
+						        <div class="images"> <img src="add_view.png" /> </div>
+						        <li> Type the code hightligh in red square to the top of TableRow1 (as shown in images) </li>
+						        <li> Click on Save when you finish </li>
+						    </ul>
+						    
+						    <h4> Make The Counter Work </h4>
+						    
+						    <p>
+						        The next step is to add counter to the code:
+						    </p>
+						    
+						    <ul>
+						        <li> Go to MemoryGame -> src -> com.aviy.memory -> Manager.java </li>
+						        <li> Once you have open the file <b> Manager.java </b> press <b> Ctrl + F </b> to find keyword <b> newGame </b> </li>
+						        <div class="images"> <img src="add_counter.png" /> </div>
+						        <li> Add the code highlighted in red box to the bottom of the function </li>
+						        <li> Inside function setText, copy the Khmer unicode that you have converted in chapter <b> Converting Khmer Unicode </b> to it. </li>
+						        <li> Now you have show counter when initialize the game, block of code above mean to set counter to 0 </li>
+						        <li> On your keyboard press <b> Ctrl + F </b> again and search for keyword <b> turnCard </b> </li>
+						        <div class="images"> <img src="add_another_counter.png" /> </div>
+						        <li> Copy the red highlighted code to the location showing in the image above. </li>
+						        <li> Click Save when you finish </li>
+						    </ul>
+						    
+						    <p> Now deploy your application again, you will see the counter in your game. </p>
+
+						    <div class="text-right"><button type="button" class="btn btn-success">Mark as complet</button></div>
+						</div>
+				
+
+
+			    	<div class="pull-left previous"><a href="#">< Name of the last step</a></div>
+			    	<div class="text-right next"><a href="#">Name of the next step ></a></div>
+
+
+
+			    	
+
+
+
+
+			    </div>
+			</div>
+
+
+
+
+
+		
+			
+			</div>
+
+
+
+
+
+		</div>
+	</body>
+</html>
