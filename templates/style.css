@@ -5,10 +5,9 @@ nav li
     font-size: 1.5em;
 }
 
-.language 
+.sabairean-description
 {
-margin-right: 100px;
-
+	width: 400px;
 }
 
 .image, .description
@@ -20,44 +19,49 @@ margin-right: 100px;
 	overflow: hidden;
 	margin-right: 30px;
 	margin-left: 40px;
-
 }
 
-.steps
+.description
 {
-	width: 700px;
-	display: block;
-	padding: 50px 0 0 250px
-
+	padding: 5px 5px 5px
 }
 
+.get-started
+{
+	margin: 40px 0 0 40px;
+}
 
-.steps strong 
+.get-started strong 
 {
 	font-size: 30px;
 }
 
-.steps li 
+.get-started ol li 
 {
 	padding-bottom: 40px;
 	width: 360px;
 	list-style-type: none;
 }
 
-li p 
+.get-started li
 {
-	padding-left: 20px
+	padding-left: 80px
+}
+
+.get-started li p 
+{
+	padding-left: 10px
 }
 
 .start 
 {
 	margin-right: 110px;
 	margin-top: -20px;
-	width : 10%;
+	width : 20%;
 }
 
 
-.numbers 
+.get-started .numbers 
 {	
 	width: 60px;
 	height: 60px;
@@ -66,29 +70,7 @@ li p
 	font-size: 2em;
 	padding-top: 8px ;
 	font-weight: bold;
-	margin-right: 240px;
-	margin-top: -450px;
-}
-
-li p 
-{
-	padding-left: 20px
-}
-
-.one
-{
-	margin-right: 240px;
-	margin-top: -450px;
-}
-
-.two
-{
-	margin-top: -300px;	
-}
-
-.three
-{
-	margin-top: -150px;	
+	margin-top: 10px
 }
 
 
