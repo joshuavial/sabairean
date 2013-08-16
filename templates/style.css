@@ -11,7 +11,7 @@ margin-right: 100px;
 
 }
 
-img, .description
+.image, .description
 {
 	margin-top: 10px;
 	border: 3px solid black;
@@ -32,7 +32,7 @@ img, .description
 }
 
 
-strong 
+.steps strong 
 {
 	font-size: 30px;
 }
@@ -90,4 +90,122 @@ li p
 {
 	margin-top: -150px;	
 }
+
+
+.courses
+{
+	border: 3px solid black;
+	width: 90%;
+	height: 200px;
+	overflow: hidden;
+	padding: 8px 10px 10px 10px;
+	margin-bottom: 40px;
+}
+
+header .tag
+{
+	list-style-type: none;
+	margin: -10px 0 20px 0;
+	padding-left: 0
+}
+
+.tag li 
+{
+	display: inline-block;
+	border-right: 2px solid black;
+	padding: 0 5px 0 5px
+}
+
+.courses h2
+{
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+.courses h3
+{
+	font-size: 16px;
+	margin: -10px 0 0 0;
+	font-weight: bold;
+}
+
+.courses .prerequisites li
+{
+	font-size: 16px;
+	font-weight: none;
+	margin: 0 0 0 100px;
+	list-style-type:none;
+}
+
+.courses .prerequisites li.done
+{
+	background-image: url(check_mark.png);
+	background-size: 10px 10px;
+    background-repeat: no-repeat; 
+    background-position: left; 
+    padding-left: 20px;
+}
+
+.courses .prerequisites li.not_done
+{
+	background-image: url(delete.jpg);
+	background-size: 10px 10px;
+    background-repeat: no-repeat; 
+    background-position: left; 
+    padding-left: 20px;
+}
+
+.courses .tag 
+{
+	font-size: 14px;
+	padding: 0 0 0 0;
+	margin-top: -2px;
+}
+
+.courses .student_number
+{
+	margin-top: -40px;
+	font-size: 1.4em;
+	font-style: bold;
+	margin-right: 10px;
+	margin-bottom: 10px
+}
+
+.tick 
+{
+	width: 8%;
+	height: auto;
+	margin-top: -28px;
+}
+
+.memo_img
+{
+	border: solid 1px black;
+	width: 25%;
+	margin-right: 10px
+}
+
+.prerequisites
+{
+	padding-top: 5px;
+}
+
+.prerequisites .tick
+{
+	width: 10%
+}
+
+.description_course p
+{
+	font-size: 16px;
+	font-style: none;
+}
+
+.description_course .prerequisites h1
+{
+	font-style: bold;
+	font-size: 16px;
+}
+
+
 
