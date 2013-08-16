@@ -37,7 +37,7 @@ margin-right: 100px;
 	font-size: 30px;
 }
 
-ol li 
+.steps li 
 {
 	padding-bottom: 40px;
 	width: 360px;
@@ -205,6 +205,59 @@ header .tag
 {
 	font-style: bold;
 	font-size: 16px;
+}
+
+
+.title_app
+{
+	padding-bottom: 20px;
+}
+
+.rating 
+{
+	font-size: 2.71429em;
+
+}
+
+.descriptionDetails, .description_Prerequisites, .steps_details, .ressources, .user_complet
+{
+	border: 3px solid black;
+	margin-bottom: 20px;
+	width: 90%;
+	padding: 10px 10px 10px 10px;
+}
+
+.descriptionDetails, .description_Prerequisites
+{
+	font-size: 1.28571em;
+	overflow: auto;
+	line-height: 1.5em
+}
+
+.steps_details
+{
+	font-size: 1.71429em;
+	list-style-type: decimal;
+	line-height: 3em
+}
+
+.ressources li
+{
+	line-height: 1.5em;
+}
+
+.user_complet img
+{
+	width: 25%;
+	margin-right: 5px;
+	border: 2px solid black;
+}
+ .user_complet .number_complet
+{
+	font-weight: bold;
+	font-size: 2em;
+	padding: 15px 15px 0 0;
+
 }
 
 
