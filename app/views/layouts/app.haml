@@ -10,19 +10,19 @@
         = javascript_include_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"
         = csrf_meta_tags
         = yield(:head)
-  %body
-    %ul.choose_language
-      %li
-        %a{'ng-click'=>"setLanguage('en')"} English
-      %li
-        %a{'ng-click'=>"setLanguage('kh-kh')"} ភាសាខ្មែរ
-      %li
-        %a{'ng-click'=>"setLanguage('fr-fr')"} Français
-    %nav{style:'margin-top:10px'}
-      %ul
-        %li{'data-i18n' => '__title__'}
-        %li= link_to 'Public Site', root_path
-
+  %body.container
+    /%ul.choose_language
+    /  %li
+    /    %a{'ng-click'=>"setLanguage('en')"} English
+    /  %li
+    /    %a{'ng-click'=>"setLanguage('kh-kh')"} ភាសាខ្មែរ
+    /  %li
+    /    %a{'ng-click'=>"setLanguage('fr-fr')"} Français
+    /%nav{style:'margin-top:10px'}
+    /  %ul
+    /    %li{'data-i18n' => '__title__'}
+    /    %li= link_to 'Public Site', root_path
+    %br
 
     %div{'ng-view' => ''}
 
