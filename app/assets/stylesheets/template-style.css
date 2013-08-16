@@ -1,0 +1,246 @@
+nav li
+{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.sabairean-description
+{
+	width: 400px;
+}
+
+.image, .description
+{
+	margin-top: 10px;
+	border: 3px solid black;
+	width: 400px;
+	height: 280px;
+	overflow: hidden;
+	margin-right: 30px;
+	margin-left: 40px;
+}
+
+.description
+{
+	padding: 5px 5px 5px
+}
+
+.get-started
+{
+	margin: 40px 0 0 40px;
+}
+
+.get-started strong 
+{
+	font-size: 30px;
+}
+
+.get-started ol li 
+{
+	padding-bottom: 40px;
+	width: 360px;
+	list-style-type: none;
+}
+
+.get-started li
+{
+	padding-left: 80px
+}
+
+.get-started li p 
+{
+	padding-left: 10px
+}
+
+.start 
+{
+	margin-right: 110px;
+	margin-top: -20px;
+	width : 20%;
+}
+
+
+.get-started .numbers 
+{	
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	border-radius: 30px;
+	font-size: 2em;
+	padding-top: 8px ;
+	font-weight: bold;
+	margin-top: 10px
+}
+
+
+.courses
+{
+	border: 3px solid black;
+	width: 90%;
+	height: 200px;
+	overflow: hidden;
+	padding: 8px 10px 10px 10px;
+	margin-bottom: 40px;
+}
+
+header .tag
+{
+	list-style-type: none;
+	margin: -10px 0 20px 0;
+	padding-left: 0
+}
+
+.tag li 
+{
+	display: inline-block;
+	border-right: 2px solid black;
+	padding: 0 5px 0 5px
+}
+
+.courses h2
+{
+	font-size: 18px;
+	margin-top: 0px;
+}
+
+.courses h3
+{
+	font-size: 16px;
+	margin: -10px 0 0 0;
+	font-weight: bold;
+}
+
+.courses .prerequisites li
+{
+	font-size: 16px;
+	font-weight: none;
+	margin: 0 0 0 100px;
+	list-style-type:none;
+}
+
+.courses .prerequisites li.done
+{
+	background-image: url(/assets/mocks/check_mark.png);
+	background-size: 10px 10px;
+    background-repeat: no-repeat; 
+    background-position: left; 
+    padding-left: 20px;
+}
+
+.courses .prerequisites li.not_done
+{
+	background-image: url(/assets/mocks/delete.jpg);
+	background-size: 10px 10px;
+    background-repeat: no-repeat; 
+    background-position: left; 
+    padding-left: 20px;
+}
+
+.courses .tag 
+{
+	font-size: 14px;
+	padding: 0 0 0 0;
+	margin-top: -2px;
+}
+
+.courses .student_number
+{
+	margin-top: -40px;
+	font-size: 1.4em;
+	font-style: bold;
+	margin-right: 10px;
+	margin-bottom: 10px
+}
+
+.tick 
+{
+	width: 8%;
+	height: auto;
+	margin-top: -28px;
+}
+
+.memo_img
+{
+	border: solid 1px black;
+	width: 25%;
+	margin-right: 10px
+}
+
+.prerequisites
+{
+	padding-top: 5px;
+}
+
+.prerequisites .tick
+{
+	width: 10%
+}
+
+.description_course p
+{
+	font-size: 16px;
+	font-style: none;
+}
+
+.description_course .prerequisites h1
+{
+	font-style: bold;
+	font-size: 16px;
+}
+
+
+.title_app
+{
+	padding-bottom: 20px;
+}
+
+.rating 
+{
+	font-size: 2.71429em;
+
+}
+
+.descriptionDetails, .description_Prerequisites, .steps_details, .ressources, .user_complet
+{
+	border: 3px solid black;
+	margin-bottom: 20px;
+	width: 90%;
+	padding: 10px 10px 10px 10px;
+}
+
+.descriptionDetails, .description_Prerequisites
+{
+	font-size: 1.28571em;
+	overflow: auto;
+	line-height: 1.5em
+}
+
+.steps_details
+{
+	font-size: 1.71429em;
+	list-style-type: decimal;
+	line-height: 3em
+}
+
+.ressources li
+{
+	line-height: 1.5em;
+}
+
+.user_complet img
+{
+	width: 25%;
+	margin-right: 5px;
+	border: 2px solid black;
+}
+ .user_complet .number_complet
+{
+	font-weight: bold;
+	font-size: 2em;
+	padding: 15px 15px 0 0;
+
+}
+
+
+

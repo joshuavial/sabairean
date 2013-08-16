@@ -5,7 +5,9 @@
       %title{'data-i18n' => "__title__"}
       %meta{:content => content_for?(:description) ? yield(:description) : "Sabairean", :name => "description"}
         = stylesheet_link_tag "app", :media => "all"
+        = stylesheet_link_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css", :media => "all"
         = javascript_include_tag "application"
+        = javascript_include_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"
         = csrf_meta_tags
         = yield(:head)
   %body
