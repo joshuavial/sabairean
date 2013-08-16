@@ -227,7 +227,7 @@ header .tag
 	padding: 10px 10px 10px 10px;
 }
 
-.descriptionDetails
+.descriptionDetails, .description_Prerequisites
 {
 	font-size: 1.28571em;
 	overflow: auto;
@@ -240,4 +240,25 @@ header .tag
 	list-style-type: decimal;
 	line-height: 3em
 }
+
+.ressources li
+{
+	line-height: 1.5em;
+}
+
+.user_complet img
+{
+	width: 25%;
+	margin-right: 5px;
+	border: 2px solid black;
+}
+ .user_complet .number_complet
+{
+	font-weight: bold;
+	font-size: 2em;
+	padding: 15px 15px 0 0;
+
+}
+
+
 
