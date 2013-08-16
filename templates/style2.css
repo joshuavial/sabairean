@@ -1,0 +1,33 @@
+.step_title
+{
+	margin: 25px 0 25px 0;
+}
+
+
+ 
+.full_step
+{
+	border: 2px solid black;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 20px 10px 20px;
+	font-size: 1.142857em;
+	line-height: 1.5em
+}
+
+.introduction
+{
+	font-weight: bold;
+}
+
+.full_step img 
+{
+	margin: 25px 25px 25px 25px;
+	width: 60%;
+}
+
+.full_step h4
+{
+	font-weight: bold;
+	margin-top: 30px;
+	text-decoration: underline;
+}
