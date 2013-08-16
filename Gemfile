@@ -1,15 +1,13 @@
 source 'https://rubygems.org' 
 gem 'rails', '4.0.0'
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'haml-rails'
 #gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'figaro'
-gem 'haml-rails'
 gem 'pg'
 gem 'sqlite3'
 
@@ -20,6 +18,12 @@ gem 'angularjs-rails-resource'
 
 gem 'twitter-bootstrap-rails'
 gem 'bloggy'
+
+group :assets do
+  gem 'uglifier', '>= 1.3.0'
+  gem 'coffee-rails', '~> 4.0.0'
+  gem 'therubyracer', '~> 0.11.4'
+end
 
 group :development do
   gem 'better_errors'
