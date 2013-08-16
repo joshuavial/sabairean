@@ -6,70 +6,71 @@
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <title>Sabairean Application - Home</title>
     </head>
  
     <body>
-        <div id="bloc_page" class="container">
-			<nav>
-				<ul class="unstyled">
-					<li><a href=home.html>Home</a></li>
-                    <li><a href=courses.html>Courses</a></li>
-                    <li><a href="#">Sabairean</a></li>        
-				</ul>
-			</nav>
-
-   			<p class="pull-right language">
-		       <select name="language" id="language">
-		           <option value="english">English</option>
-		           <option value="khmer">Khmer</option>
-		           <option value="french">French</option>
-		       </select>
-			</p> 	
+        <div class="container">
+			<nav class="navbar" role="navigation">
+				<div class="navbar-header">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="home.html">Home</a></li>
+	                    <li><a href="courses.html">Courses</a></li>
+						<li><a href="http://www.sabairean.com">Sabairean</a></li>		   
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+					    <li class="Language">
+					    	<a href="#" class="language-toggle" data-toggle="dropdown">Language <b class="caret"></b></a>
+					    	<ul class="dropdown-menu">
+					        	<li><a href="#">Khmer</a></li>
+			         			<li><a href="#">English</a></li>
+					            <li><a href="#">French</a></li>
+					        </ul>
+					    </li>
+					</ul>
+				</div>
+			</nav> 	
 
 			<section>
-				<div class="pull-left">
-					<div>
-						<img class="img-responsive image" src="student.jpg" id="logo"/>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<div>
+							<img class="img-responsive image" src="student.jpg" id="logo"/>
+						</div>
+
+						<div>	
+							<p class="lead description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+							</p>
+						</div>
 					</div>
 
-					<div>	
-						<p class="lead description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-						</p>
-					</div>
+				    <div class="col-xs-12 col-sm-6 col-md-6">
+				    	<div class="get-started">
+							<ol> <p class="pull-left numbers text-center">1</p>
+								<li>
+									<strong>Setup</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
+								</li>
+								<p class="pull-left numbers text-center">2</p>
+								<li>
+									<strong>Builds</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>			
+								</li>
+								<p class="pull-left numbers text-center">2</p>
+								<li>
+									<strong>Deploy</strong>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									
+								</li>
+							</ol>
+						</div>
+							<a href="courses.html" class="btn btn-primary btn-large pull-right start">start</a>
+				    </div>
 				</div>
 
-				
-				<ol class="steps pull-right">
-					<li>
-						<strong>Setup</strong>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
-					</li>
-					<li>
-						<strong>Builds</strong>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>			
-					</li>
-					<li>
-						<strong>Deploy</strong>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						
-					</li>
-				</ol>
-				
-				
-				
-				<a href="courses.html" class="btn btn-primary btn-large pull-right start">start</a>
 
-				<p class="pull-right numbers one text-center">1</p>
-				<p class="pull-right numbers two text-center">2</p>
-				<p class="pull-right numbers three text-center">3</p>
 
-			</section>
-		</div>
-    </body>
-</html>
+
