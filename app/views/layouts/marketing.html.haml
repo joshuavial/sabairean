@@ -4,16 +4,18 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       %title= content_for?(:title) ? yield(:title) : "Sabairean"
       %meta{:content => content_for?(:description) ? yield(:description) : "Sabairean", :name => "description"}
+        = stylesheet_link_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css", :media => "all"
         = stylesheet_link_tag "marketing", :media => "all"
         = javascript_include_tag "application"
+        = javascript_include_tag "http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"
         = csrf_meta_tags
         = yield(:head)
   %body{:class => "#{controller_name} #{action_name}"}
     #container.container
       %header
-        = render 'layouts/navigation'
-        = render 'layouts/messages'
+        = render 'layouts/marketing/navigation'
+        = render 'layouts/marketing/messages'
       #main{:role => "main"}
         = yield
-      %footer= render 'layouts/footer'
+      %footer= render 'layouts/marketing/footer'
 
