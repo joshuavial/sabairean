@@ -13,7 +13,8 @@ files = [
   'vendor/assets/javascripts/rails_karma/angular-mocks.js',
 
   //our app!
-  'app/assets/angular/**',
+  'app/assets/sabairean/**js',
+  'app/assets/sabairean/**coffee',
 
   //and our tests
   'karma/**/*',

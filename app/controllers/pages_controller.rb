@@ -6,5 +6,6 @@ class PagesController < ApplicationController
   end
 
   def app
+    render layout: 'app'
   end
 end

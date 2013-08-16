@@ -1,6 +1,0 @@
-%h1 {{chapter.key | i18n}}
-%ul.steps
-  %li{ng-repeat: 'step in config.steps'}
-    %a{href: "#topics/{{topic.key}}/chapters/{{chapter.key}}/{{step}}"} {{step}}
-
-.chapter{ng-include: "step_file"}

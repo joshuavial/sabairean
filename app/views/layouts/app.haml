@@ -1,14 +1,14 @@
 !!!
-%html{lang: 'en', 'ng-app' => 'hlApp'}
+%html{lang: 'en', 'ng-app' => 'sabairean'}
   %head
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
       %title{'data-i18n' => "__title__"}
       %meta{:content => content_for?(:description) ? yield(:description) : "Sabairean", :name => "description"}
-        = stylesheet_link_tag "application", :media => "all"
+        = stylesheet_link_tag "app", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
-  %body{'ng-controller' => 'AppController'}
+  %body
     %ul.choose_language
       %li
         %a{'ng-click'=>"setLanguage('en')"} English
@@ -16,16 +16,11 @@
         %a{'ng-click'=>"setLanguage('kh-kh')"} ភាសាខ្មែរ
       %li
         %a{'ng-click'=>"setLanguage('fr-fr')"} Français
+    %nav{style:'margin-top:10px'}
+      %ul
+        %li{'data-i18n' => '__title__'}
+        %li= link_to 'Public Site', root_path
 
-    %h1.title{'data-i18n' => '__title__'}
-
-    %ul.breadcrumbs
-      %li
-        %a{href:"#"} {{"__topics__" | i18n}}
-      %li{'ng-show' => 'topic_exists()'}
-        %a{href:"#/topics/{{topic.key}}"} {{topic.key | i18n}}
-      %li{'ng-show' => 'chapter_exists()'}
-        %a{href:"#/topics/{{topic.key}}/chapters/{{chapter.key}}"} {{chapter.key | i18n}}
 
     %div{'ng-view' => ''}
 

@@ -15,5 +15,5 @@
 //= require angular-ui
 //= require angularjs/rails/resource
 //= require localize
-//= require ../angular/app
-//= require_tree ../angular
+//= require ../sabairean/app
+//= require_tree ../sabairean
