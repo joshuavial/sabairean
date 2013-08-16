@@ -14,10 +14,12 @@ The first use case we are focusing on is android development in Cambodia
 
 Checkout these [useful links](https://www.loomio.org/discussions/5657) to find out more about the project
 
-#Getting started
+## Contributing
 
-1. npm install to get the node modules you neeed
-2. grunt watch will look for changes in the haml, coffee and sass files
-and auto compile
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
 
-##
+Checkout the Github guide on how to [fork a repo](https://help.github.com/articles/fork-a-repo) for more information
