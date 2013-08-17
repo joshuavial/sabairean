@@ -1,0 +1,20 @@
+%nav.navbar{:role=>"navigation"}
+  .navbar-header
+    %ul.nav.navbar-nav
+      %li
+        %a{:href=>'/'}Home
+      %li.active
+        %a{:href=>'#/courses'}Courses
+    %ul.navnavbar-nav.navbar-right.pull-right
+      %li.Language
+        %a.language-toggle{:href=>"#", "data-toggle"=>"dropdown"}
+          Language 
+          %b.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href=>"#"}ភាសាខ្មែរ
+          %li
+            %a{:href=>"#"}English
+          %li
+            %a{:href=>"#"}Français
+
