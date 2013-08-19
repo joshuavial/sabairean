@@ -1,9 +1,10 @@
-.pull-right= image_tag 'bug.gif'
-.pull-left= link_to image_tag('logo_corner.jpg'), root_path
-%nav
-  %ul.nav.nav-bar
-    %li= link_to 'Home', root_path
-    %li= link_to 'About', about_path
-    /%li= link_to 'Blog'
-.clearfix
+.row
+	.pull-right= image_tag 'bug.gif'
+	.pull-left= link_to image_tag('logo_corner.jpg'), root_path
+.row
+	%nav.navbar{:role=>"navigation"}
+		%ul.nav.nav-bar
+			%li= link_to 'Home', root_path
+			%li= link_to 'About', about_path
+			/%li= link_to 'Blog'
 
