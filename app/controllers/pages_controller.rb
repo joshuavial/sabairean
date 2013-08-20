@@ -10,4 +10,8 @@ class PagesController < ApplicationController
   def app
     render layout: 'app'
   end
+
+  def contact
+    render layout: 'marketing'
+  end
 end

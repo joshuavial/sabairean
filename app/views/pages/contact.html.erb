@@ -1,0 +1,14 @@
+<h1>Contact Us</h1>
+
+<%= form_tag '/contact' do %>
+    <div>
+        <%= label_tag 'subject' %>
+        <%= text_field_tag 'subject' %>
+    </div>
+    <div>
+        <%= label_tag 'Message' %>
+        <%= text_area_tag 'post', nil, size: "25x10" %>
+    </div>
+    <%= submit_tag "Submit" %>
+
+<% end %>
