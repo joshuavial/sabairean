@@ -14,4 +14,8 @@ class PagesController < ApplicationController
   def contact
     render layout: 'marketing'
   end
+
+  def notify
+    render layout: 'marketing'
+  end
 end
