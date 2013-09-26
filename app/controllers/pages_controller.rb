@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   end
 
   def notify
+    ContactMailer.contact(params[:message], params[:subject], params[:email]).deliver
     render layout: 'marketing'
   end
 end

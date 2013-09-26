@@ -6,8 +6,12 @@
         <%= text_field_tag 'subject' %>
     </div>
     <div>
+      <%= label_tag 'Your email' %>
+      <%= text_field_tag 'email' %>
+    </div>
+    <div>
         <%= label_tag 'Message' %>
-        <%= text_area_tag 'post', nil, size: "25x10" %>
+        <%= text_area_tag 'message', nil, size: "25x10" %>
     </div>
     <%= submit_tag "Submit" %>
 
